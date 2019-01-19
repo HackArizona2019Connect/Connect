@@ -76,8 +76,8 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_information) {
             // Handle the camera action
         } else if (id == R.id.nav_events) {
-            Intent switchActivity = new Intent(getApplicationContext(), eventsActivity.class);
-            startActivity(switchActivity);
+            //Intent switchActivity = new Intent(getApplicationContext(), eventsActivity.class);
+            //startActivity(switchActivity);
         } else if (id == R.id.nav_gallery) {
         }
 
