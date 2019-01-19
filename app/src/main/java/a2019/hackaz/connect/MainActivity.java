@@ -90,6 +90,10 @@ public class MainActivity extends AppCompatActivity
         launchBrowser("https://www.registrar.arizona.edu/military-benefits/welcome-veterans-services");
     }
 
+    public void onNewClicked(View view) {
+        launchBrowser("http://www.admissions.arizona.edu/");
+    }
+
     public void launchBrowser(String uri) {
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
         startActivity(browserIntent);

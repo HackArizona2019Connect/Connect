@@ -40,7 +40,8 @@
                 android:id="@+id/button20"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:onClick="onNewClicked"
+                android:text="@string/new_button" />
 
             <Button
                 android:id="@+id/enrollment_button"
@@ -58,90 +59,6 @@
                 android:text="@string/GIBill_button"
                 tools:layout_editor_absoluteX="77dp"
                 tools:layout_editor_absoluteY="42dp" />
-
-            <Button
-                android:id="@+id/button12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button13"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button26"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button24"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button14"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button23"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button15"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button25"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button22"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button16"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button17"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button18"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button21"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button19"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="End" />
 
         </LinearLayout>
     </ScrollView>
