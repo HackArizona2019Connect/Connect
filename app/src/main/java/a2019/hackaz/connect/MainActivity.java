@@ -1,10 +1,12 @@
 package a2019.hackaz.connect;
 
+import android.support.v4.app.Fragment;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -16,7 +18,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener,
+        Information.OnFragmentInteractionListener,
+        HomeScreen.OnFragmentInteractionListener,
+        Events.OnFragmentInteractionListener
+        {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +39,11 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        Fragment fragment = new HomeScreen();
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.content_frame, fragment);
+        ft.commit();
+
     }
 
     @Override
@@ -70,32 +81,34 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
+        Fragment fragment = null;
+
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
         if (id == R.id.nav_information) {
+            fragment = new Information();
             // Handle the camera action
         } else if (id == R.id.nav_events) {
+            fragment = new Events();
             //Intent switchActivity = new Intent(getApplicationContext(), eventsActivity.class);
             //startActivity(switchActivity);
         } else if (id == R.id.nav_gallery) {
+        }
+
+        if(fragment != null) {
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.content_frame, fragment);
+            ft.commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+    @Override
+    public void onFragmentInteraction(Uri uri) {
 
-    public void onEnrollmentClicked(View view) {
-        launchBrowser("https://www.registrar.arizona.edu/military-benefits/welcome-veterans-services");
     }
 
-    public void onNewClicked(View view) {
-        launchBrowser("http://www.admissions.arizona.edu/");
-    }
-
-    public void launchBrowser(String uri) {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
-        startActivity(browserIntent);
-    }
 }

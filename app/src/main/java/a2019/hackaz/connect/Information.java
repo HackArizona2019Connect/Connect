@@ -1,6 +1,7 @@
 package a2019.hackaz.connect;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -104,5 +105,18 @@ public class Information extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
+    }
+
+    public void onEnrollmentClicked(View view) {
+        launchBrowser("https://www.registrar.arizona.edu/military-benefits/welcome-veterans-services");
+    }
+
+    public void onNewClicked(View view) {
+        launchBrowser("http://www.admissions.arizona.edu/");
+    }
+
+    public void launchBrowser(String uri) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+        startActivity(browserIntent);
     }
 }

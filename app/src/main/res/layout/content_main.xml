@@ -7,60 +7,10 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/app_bar_main">
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_width="match_parent">
-
-
-            <Button
-                android:id="@+id/button20"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onNewClicked"
-                android:text="@string/new_button" />
-
-            <Button
-                android:id="@+id/enrollment_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onEnrollmentClicked"
-                android:text="@string/enrollment_button"
-                tools:layout_editor_absoluteX="82dp"
-                tools:layout_editor_absoluteY="117dp" />
-
-            <Button
-                android:id="@+id/GI_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/GIBill_button"
-                tools:layout_editor_absoluteX="77dp"
-                tools:layout_editor_absoluteY="42dp" />
-
-        </LinearLayout>
-    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

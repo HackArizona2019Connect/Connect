@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_home_screen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeScreen">
-
-    <!-- TODO: Update blank fragment layout -->
+    tools:context=".HomeScreen"
+    android:orientation="vertical"
+    >
     <TextView
+        android:id="@+id/welcome_message_textview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_message_textview"
+        android:textAlignment="center"
+        android:textSize="36sp" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/information_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onInformationButtonClicked"
+        android:text="@string/Information_button" />
+
+    <Button
+        android:id="@+id/events_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Events_button" />
+
+    <Button
+        android:id="@+id/enrollment_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enrollment_button" />
+
+    <Button
+        android:id="@+id/vets_homepage_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/veterans_homepage_button" />
+
+</LinearLayout>
