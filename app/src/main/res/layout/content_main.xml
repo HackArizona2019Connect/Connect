@@ -46,6 +46,7 @@
                 android:id="@+id/enrollment_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="onEnrollmentClicked"
                 android:text="@string/enrollment_button"
                 tools:layout_editor_absoluteX="82dp"
                 tools:layout_editor_absoluteY="117dp" />
