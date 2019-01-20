@@ -13,7 +13,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="new_button">new</string>
     <string name="welcome_message_textview">Welcome</string>
-    <string name="veterans_homepage_button">Veteran\'s Homepage</string>
+    <string name="veterans_homepage_button">Veterans Homepage</string>
     <string name="ApplyToUATextView">Apply To The UA Online</string>
     <string name="click_here">Click Here</string>
     <string name="ApplyToGIBillTextView">Apply For GI-Bill</string>
@@ -37,9 +37,9 @@
     <string name="nav_events">Events</string>
     <string name="nav_enrollment_guide">Enrollment Guide</string>
     <string name="nav_gallery">Gallery</string>
-    <string name="about_us_button">About Us</string>
+    <string name="about_us_button">Veteran\'s Center Info</string>
     <string name="crisis_hotline_button">Crisis Hotline</string>
-    <string name="female_vets_button">Female Veterans</string>
+    <string name="female_vets_button">Women\'s Out reach</string>
     <string name="jobs_button">Jobs</string>
     <string name="map_of_school">Map of School</string>
     <string name="top_button">T.O.P. Program</string>

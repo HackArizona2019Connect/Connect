@@ -50,6 +50,13 @@
             android:text="@string/about_us_button" />
 
         <Button
+            android:id="@+id/mapOfSchoolButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSchoolMapClicked"
+            android:text="@string/map_of_school" />
+
+        <Button
             android:id="@+id/crisisHotLine_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -72,13 +79,6 @@
             android:text="@string/jobs_button"
             android:onClick="onJobsClicked"/>
 
-        <Button
-            android:id="@+id/mapOfSchoolButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/map_of_school"
-            android:onClick="onSchoolMapClicked"/>
-
         <Space
             android:layout_width="match_parent"
             android:layout_height="50dp" />
@@ -96,6 +96,13 @@
             android:background="?android:attr/listDivider" />
 
         <Button
+            android:id="@+id/palsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onPalsClicked"
+            android:text="@string/pals_button" />
+
+        <Button
             android:id="@+id/female_vets_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -103,13 +110,6 @@
             android:text="@string/female_vets_button"
             tools:layout_editor_absoluteX="77dp"
             tools:layout_editor_absoluteY="42dp" />
-
-        <Button
-            android:id="@+id/palsButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/pals_button"
-            android:onClick="onPalsClicked"/>
 
         <Button
             android:id="@+id/TopButton"

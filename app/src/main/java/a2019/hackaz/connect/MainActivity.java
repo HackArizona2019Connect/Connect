@@ -196,7 +196,9 @@ public class MainActivity extends AppCompatActivity
         launchBrowser("http://vets.arizona.edu/jobs");
     }
     public void onFemaleVetsClicked(View view) {
-
+        Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto","alozoya050312@email.arizona.edu",null));
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Women's Out Reach");
+        startActivity(intent);
     }
     public void onSchoolMapClicked(View view) {
         launchBrowser("https://map.arizona.edu/");
@@ -218,6 +220,7 @@ public class MainActivity extends AppCompatActivity
     public void switchFragment(Fragment fragment) {
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.content_frame, fragment);
+        ft.addToBackStack(null);
         ft.commit();
     }
 }

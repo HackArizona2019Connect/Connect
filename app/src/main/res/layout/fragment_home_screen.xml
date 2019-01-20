@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fragment_home_screen"
     android:layout_width="match_parent"
@@ -7,6 +8,7 @@
     tools:context=".HomeScreen"
     android:orientation="vertical"
     >
+
     <TextView
         android:id="@+id/welcome_message_textview"
         android:layout_width="match_parent"
@@ -15,12 +17,19 @@
         android:textAlignment="center"
         android:textSize="36sp" />
 
-    <Button
-        android:id="@+id/information_button"
+    <TextView
+        android:id="@+id/upcomingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="onInformationButtonClicked"
-        android:text="@string/Information_button" />
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/welcome_page_image"
+        app:srcCompat="@mipmap/welcome_page_image" />
 
     <Button
         android:id="@+id/enrollment_button"
@@ -35,6 +44,13 @@
         android:layout_height="wrap_content"
         android:onClick="onEventsClicked"
         android:text="@string/Events_button" />
+
+    <Button
+        android:id="@+id/information_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onInformationButtonClicked"
+        android:text="@string/Information_button" />
 
     <Button
         android:id="@+id/vets_homepage_button"
