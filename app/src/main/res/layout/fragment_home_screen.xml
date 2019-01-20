@@ -39,13 +39,6 @@
         android:text="@string/enrollment_button" />
 
     <Button
-        android:id="@+id/events_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onEventsClicked"
-        android:text="@string/Events_button" />
-
-    <Button
         android:id="@+id/information_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -58,5 +51,28 @@
         android:layout_height="wrap_content"
         android:onClick="onVetsWebsiteClicked"
         android:text="@string/veterans_homepage_button" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/SaltTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Broken" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <Button
+        android:id="@+id/events_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onEventsClicked"
+        android:text="@string/Events_button" />
 
 </LinearLayout>
