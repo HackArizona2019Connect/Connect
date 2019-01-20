@@ -32,4 +32,9 @@
     <string name="registrar_online_certification_button">Registar\'s Online Certification Guide</string>
     <string name="resource_reevaluation_textview">Reevaluate Financial Aid</string>
     <string name="register_with_va_ebenefits_textview">Register With VA EBenefits</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_information">Information</string>
+    <string name="nav_events">Events</string>
+    <string name="nav_enrollment_guide">Enrollment Guide</string>
+    <string name="nav_gallery">Gallery</string>
 </resources>

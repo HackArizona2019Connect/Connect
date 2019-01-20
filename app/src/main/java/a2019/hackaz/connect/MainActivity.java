@@ -21,7 +21,11 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,
         Information.OnFragmentInteractionListener,
         HomeScreen.OnFragmentInteractionListener,
-        Events.OnFragmentInteractionListener
+        Events.OnFragmentInteractionListener,
+        EnrollmentGuideHub.OnFragmentInteractionListener,
+        EnrollmentGuidePage1.OnFragmentInteractionListener,
+        EnrollmentGuidePage2.OnFragmentInteractionListener,
+        EnrollmentGuidePage3.OnFragmentInteractionListener
         {
 
     @Override
@@ -39,10 +43,7 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        Fragment fragment = new HomeScreen();
-        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        ft.replace(R.id.content_frame, fragment);
-        ft.commit();
+        switchFragment(new HomeScreen());
 
     }
 
@@ -96,12 +97,12 @@ public class MainActivity extends AppCompatActivity
             //Intent switchActivity = new Intent(getApplicationContext(), eventsActivity.class);
             //startActivity(switchActivity);
         } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_enrollment_guide) {
+            fragment = new EnrollmentGuideHub();
         }
 
         if(fragment != null) {
-            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.replace(R.id.content_frame, fragment);
-            ft.commit();
+            switchFragment(fragment);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -114,84 +115,85 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void onInformationButtonClicked(View view) {
-        Fragment fragment = new Information();
-        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        ft.replace(R.id.content_frame,fragment);
-        ft.commit();
+        switchFragment(new Information());
     }
 
     public void onEnrollmentClicked(View view) {
-        launchBrowser("https://www.registrar.arizona.edu/military-benefits/welcome-veterans-services");
+        switchFragment(new EnrollmentGuideHub());
     }
 
     public void onNewClicked(View view) {
         launchBrowser("http://www.admissions.arizona.edu/");
     }
     public void onEventsClicked(View view) {
-        Fragment fragment = new Events();
-        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        ft.replace(R.id.content_frame, fragment);
-        ft.commit();
+        switchFragment(new Events());
     }
 
     public void onVetsWebsiteClicked(View view) {
         launchBrowser("http://vets.arizona.edu/");
     }
     public void onQuickGuideClicked(View view) {
+        switchFragment(new EnrollmentGuidePage1());
 
     }
     public void onDetailedInformationClicked(View view) {
-
+        launchBrowser("http://vets.arizona.edu/future-students");
     }
     public void onAdmissionsClicked(View view) {
-
+        launchBrowser("http://www.admissions.arizona.edu/");
     }
     public void onGIBillClicked(View view) {
-
+        launchBrowser("http://www.gibill.va.gov/");
     }
     public void onTranscriptClicked(View view) {
-
+        launchBrowser("https://jst.doded.mil/");
     }
     public void onFasfaClicked(View view) {
-
+        launchBrowser("http://www.fafsa.ed.gov/");
     }
     public void onStep1NextClicked(View view) {
-
+        switchFragment(new EnrollmentGuidePage2());
     }
     public void onStep2NextClicked(View view) {
-
+        switchFragment(new EnrollmentGuidePage3());
     }
 
     //Next Steps is U of A Orientation stuff
     public void onNextStepsClicked(View view) {
-
+        launchBrowser("http://nextsteps.arizona.edu/");
     }
     public void onResidencyStatusClicked(View view) {
-
+        launchBrowser("http://registrar.arizona.edu/residency");
     }
 
     public void onFindCollegeAdvisorClicked(View view) {
-
+        launchBrowser("http://advising.arizona.edu/content/academic-advisor-directory");
     }
     public void onScheduleAdvisementAppointmentClicked(View view) {
-
+        launchBrowser("https://sbs.arizona.edu/advising/student/login.php");
     }
     public void onUAccessClicked(View view) {
-
+        launchBrowser("http://uaccess.arizona.edu/");
     }
     public void onRegistrarCertGuideClicked(View view) {
-
+        launchBrowser("http://www.registrar.arizona.edu/vets/OnlineCertGuide");
     }
 
     public void onResourceReevaluationClicked(View view) {
-
+        launchBrowser("http://bit.ly/1lYAbZ5");
     }
     public void onEbenefitsClicked(View view) {
-
+        launchBrowser("https://www.ebenefits.va.gov/");
     }
 
     public void launchBrowser(String uri) {
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
         startActivity(browserIntent);
+    }
+
+    public void switchFragment(Fragment fragment) {
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.content_frame, fragment);
+        ft.commit();
     }
 }

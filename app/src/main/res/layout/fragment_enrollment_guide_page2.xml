@@ -1,107 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".EnrollmentGuidePage2"
-    android:orientation="vertical">
-
-    <TextView
-        android:id="@+id/completeNextStepsTextView"
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/complete_next_steps_textview"
-        android:textAlignment="center"
-        android:textSize="30sp" />
-
-    <Button
-        android:id="@+id/nextStepsButton"
+        android:layout_height="match_parent">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/click_here"
-        android:onClick="onNextStepsClicked"/>
+        android:layout_height="match_parent"
+        tools:context=".EnrollmentGuidePage2"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/completeNextStepsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/complete_next_steps_textview"
+            android:textAlignment="center"
+            android:textSize="30sp" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="30sp" />
+        <Button
+            android:id="@+id/nextStepsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/click_here"
+            android:onClick="onNextStepsClicked"/>
 
-    <TextView
-        android:id="@+id/residencyStatusTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/residency_status_textview"
-        android:textAlignment="center"
-        android:textSize="30sp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30sp" />
 
-    <Button
-        android:id="@+id/checkResidencyButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/click_here"
-        android:onClick="onResidencyStatusClicked"/>
+        <TextView
+            android:id="@+id/residencyStatusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/residency_status_textview"
+            android:textAlignment="center"
+            android:textSize="30sp" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="30sp" />
+        <Button
+            android:id="@+id/checkResidencyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/click_here"
+            android:onClick="onResidencyStatusClicked"/>
 
-    <TextView
-        android:id="@+id/academicAdvisementTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/academic_advisement_textview"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30sp" />
 
-    <Button
-        android:id="@+id/findYourCollegeAdvisorTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/find_your_college_advisor_button"
-        android:onClick="onFindCollegeAdvisorClicked"/>
+        <TextView
+            android:id="@+id/academicAdvisementTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/academic_advisement_textview"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            />
 
-    <Button
-        android:id="@+id/scheduleAcademicAppointmentTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/schedule_academic_advisement_button"
-        android:onClick="onScheduleAdvisementAppointmentClicked"/>
+        <Button
+            android:id="@+id/findYourCollegeAdvisorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/find_your_college_advisor_button"
+            android:onClick="onFindCollegeAdvisorClicked"/>
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="30sp" />
+        <Button
+            android:id="@+id/scheduleAcademicAppointmentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/schedule_academic_advisement_button"
+            android:onClick="onScheduleAdvisementAppointmentClicked"/>
 
-    <TextView
-        android:id="@+id/loginToUAccessTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/certify_va_textview"
-        android:textAlignment="center"
-        android:textSize="30sp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30sp" />
 
-    <Button
-        android:id="@+id/loginToUAccessButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/uaccess_button"
-        android:onClick="onUAccessClicked"/>
+        <TextView
+            android:id="@+id/loginToUAccessTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/certify_va_textview"
+            android:textAlignment="center"
+            android:textSize="30sp" />
 
-    <Button
-        android:id="@+id/registrarCertGuideButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/registrar_online_certification_button"
-        android:onClick="onRegistrarCertGuideClicked"/>
+        <Button
+            android:id="@+id/loginToUAccessButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/uaccess_button"
+            android:onClick="onUAccessClicked"/>
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="70sp" />
+        <Button
+            android:id="@+id/registrarCertGuideButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registrar_online_certification_button"
+            android:onClick="onRegistrarCertGuideClicked"/>
 
-    <Button
-        android:id="@+id/nextStepButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/NextStepButton"
-        android:onClick="onStep2NextClicked"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="70sp" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/nextStepButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/NextStepButton"
+            android:onClick="onStep2NextClicked"/>
+
+    </LinearLayout>
+</ScrollView>
+

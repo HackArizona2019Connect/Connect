@@ -7,19 +7,23 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Home" />
+            android:title="@string/nav_home" />
         <item
             android:id="@+id/nav_information"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Information" />
+            android:title="@string/nav_information" />
         <item
             android:id="@+id/nav_events"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Events" />
+            android:title="@string/nav_events" />
+        <item
+            android:id="@+id/nav_enrollment_guide"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/nav_enrollment_guide" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="@string/nav_gallery" />
     </group>
 
 
