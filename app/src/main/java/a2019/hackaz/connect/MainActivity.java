@@ -86,7 +86,9 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_information) {
+        if (id == R.id.nav_home) {
+            fragment = new HomeScreen();
+        } else if (id == R.id.nav_information) {
             fragment = new Information();
             // Handle the camera action
         } else if (id == R.id.nav_events) {
@@ -111,4 +113,85 @@ public class MainActivity extends AppCompatActivity
 
     }
 
+    public void onInformationButtonClicked(View view) {
+        Fragment fragment = new Information();
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.content_frame,fragment);
+        ft.commit();
+    }
+
+    public void onEnrollmentClicked(View view) {
+        launchBrowser("https://www.registrar.arizona.edu/military-benefits/welcome-veterans-services");
+    }
+
+    public void onNewClicked(View view) {
+        launchBrowser("http://www.admissions.arizona.edu/");
+    }
+    public void onEventsClicked(View view) {
+        Fragment fragment = new Events();
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.content_frame, fragment);
+        ft.commit();
+    }
+
+    public void onVetsWebsiteClicked(View view) {
+        launchBrowser("http://vets.arizona.edu/");
+    }
+    public void onQuickGuideClicked(View view) {
+
+    }
+    public void onDetailedInformationClicked(View view) {
+
+    }
+    public void onAdmissionsClicked(View view) {
+
+    }
+    public void onGIBillClicked(View view) {
+
+    }
+    public void onTranscriptClicked(View view) {
+
+    }
+    public void onFasfaClicked(View view) {
+
+    }
+    public void onStep1NextClicked(View view) {
+
+    }
+    public void onStep2NextClicked(View view) {
+
+    }
+
+    //Next Steps is U of A Orientation stuff
+    public void onNextStepsClicked(View view) {
+
+    }
+    public void onResidencyStatusClicked(View view) {
+
+    }
+
+    public void onFindCollegeAdvisorClicked(View view) {
+
+    }
+    public void onScheduleAdvisementAppointmentClicked(View view) {
+
+    }
+    public void onUAccessClicked(View view) {
+
+    }
+    public void onRegistrarCertGuideClicked(View view) {
+
+    }
+
+    public void onResourceReevaluationClicked(View view) {
+
+    }
+    public void onEbenefitsClicked(View view) {
+
+    }
+
+    public void launchBrowser(String uri) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+        startActivity(browserIntent);
+    }
 }

@@ -14,4 +14,22 @@
     <string name="new_button">new</string>
     <string name="welcome_message_textview">Welcome</string>
     <string name="veterans_homepage_button">Veteran\'s Homepage</string>
+    <string name="ApplyToUATextView">Apply To The UA Online</string>
+    <string name="click_here">Click Here</string>
+    <string name="ApplyToGIBillTextView">Apply For GI-Bill</string>
+    <string name="RequestTranscriptTextView">Request Official Transcripts From Your Previous Education\n For Military Transcripts Press Below</string>
+    <string name="ApplyForFasfaTextView">Apply To FASFA For Financial Aid</string>
+    <string name="NextStepButton">Next Step</string>
+    <string name="quick_guide_button">Quick Guide</string>
+    <string name="detailed_information_button">For Detailed Information</string>
+    <string name="complete_next_steps_textview">Complete Next Steps</string>
+    <string name="residency_status_textview">Check Your Residency Status</string>
+    <string name="academic_advisement_textview">Academic Advisement</string>
+    <string name="find_your_college_advisor_button">Find Your College Advisor</string>
+    <string name="schedule_academic_advisement_button">Schedule An Appointment</string>
+    <string name="certify_va_textview">Certify Class Schedule With VA</string>
+    <string name="uaccess_button">UAccess</string>
+    <string name="registrar_online_certification_button">Registar\'s Online Certification Guide</string>
+    <string name="resource_reevaluation_textview">Reevaluate Financial Aid</string>
+    <string name="register_with_va_ebenefits_textview">Register With VA EBenefits</string>
 </resources>
