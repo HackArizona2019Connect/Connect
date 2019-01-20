@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Connect</string>
+    <string name="app_name">UA Military-Connected Student Handbook</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">UA Military-Connected Student Handbook</string>
+    <string name="nav_header_subtitle">UA Veterans Services</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="enrollment_button">Enrollment</string>
