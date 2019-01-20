@@ -37,4 +37,14 @@
     <string name="nav_events">Events</string>
     <string name="nav_enrollment_guide">Enrollment Guide</string>
     <string name="nav_gallery">Gallery</string>
+    <string name="about_us_button">About Us</string>
+    <string name="crisis_hotline_button">Crisis Hotline</string>
+    <string name="female_vets_button">Female Veterans</string>
+    <string name="jobs_button">Jobs</string>
+    <string name="map_of_school">Map of School</string>
+    <string name="top_button">T.O.P. Program</string>
+    <string name="pals_button">PALS</string>
+    <string name="groups_textview">Groups</string>
+    <string name="important_information">Important Information</string>
+    <string name="financial_aid">Financial Aid</string>
 </resources>

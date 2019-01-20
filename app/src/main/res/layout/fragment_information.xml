@@ -30,30 +30,93 @@
         app:layout_constraintTop_toTopOf="parent">
 
 
-        <Button
-            android:id="@+id/button20"
+        <TextView
+            android:id="@+id/importantInfoTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onNewClicked"
-            android:text="@string/new_button" />
+            android:text="@string/important_information" />
+
+        <View
+            android:id="@+id/importantInfoDivider"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="?android:attr/listDivider" />
 
         <Button
-            android:id="@+id/enrollment_button"
+            android:id="@+id/aboutUsButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onEnrollmentClicked"
-            android:text="@string/enrollment_button"
+            android:onClick="onAboutUsClicked"
+            android:text="@string/about_us_button" />
+
+        <Button
+            android:id="@+id/crisisHotLine_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCrisisHotlineClicked"
+            android:text="@string/crisis_hotline_button"
             tools:layout_editor_absoluteX="82dp"
             tools:layout_editor_absoluteY="117dp" />
 
         <Button
-            android:id="@+id/GI_button"
+            android:id="@+id/financialAidButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/GIBill_button"
-            android:onClick="onGIBillClicked"
+            android:text="@string/financial_aid"
+            android:onClick="onFinancialAidClicked"/>
+
+        <Button
+            android:id="@+id/jobsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/jobs_button"
+            android:onClick="onJobsClicked"/>
+
+        <Button
+            android:id="@+id/mapOfSchoolButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/map_of_school"
+            android:onClick="onSchoolMapClicked"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/groupsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/groups_textview" />
+
+        <View
+            android:id="@+id/groupsDivider"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/female_vets_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onFemaleVetsClicked"
+            android:text="@string/female_vets_button"
             tools:layout_editor_absoluteX="77dp"
             tools:layout_editor_absoluteY="42dp" />
+
+        <Button
+            android:id="@+id/palsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pals_button"
+            android:onClick="onPalsClicked"/>
+
+        <Button
+            android:id="@+id/TopButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/top_button"
+            android:onClick="onTopClicked"/>
 
     </LinearLayout>
 </ScrollView>

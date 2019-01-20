@@ -25,7 +25,8 @@ public class MainActivity extends AppCompatActivity
         EnrollmentGuideHub.OnFragmentInteractionListener,
         EnrollmentGuidePage1.OnFragmentInteractionListener,
         EnrollmentGuidePage2.OnFragmentInteractionListener,
-        EnrollmentGuidePage3.OnFragmentInteractionListener
+        EnrollmentGuidePage3.OnFragmentInteractionListener,
+        GalleryFragment.OnFragmentInteractionListener
         {
 
     @Override
@@ -91,12 +92,10 @@ public class MainActivity extends AppCompatActivity
             fragment = new HomeScreen();
         } else if (id == R.id.nav_information) {
             fragment = new Information();
-            // Handle the camera action
         } else if (id == R.id.nav_events) {
             fragment = new Events();
-            //Intent switchActivity = new Intent(getApplicationContext(), eventsActivity.class);
-            //startActivity(switchActivity);
         } else if (id == R.id.nav_gallery) {
+            fragment = new GalleryFragment();
         } else if (id == R.id.nav_enrollment_guide) {
             fragment = new EnrollmentGuideHub();
         }
@@ -186,6 +185,31 @@ public class MainActivity extends AppCompatActivity
         launchBrowser("https://www.ebenefits.va.gov/");
     }
 
+    public void onAboutUsClicked(View view) {
+        launchBrowser("http://vets.arizona.edu/about");
+    }
+    public void onCrisisHotlineClicked(View view) {
+        Intent callIntent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:18002738255"));
+        startActivity(callIntent);
+    }
+    public void onJobsClicked(View view) {
+        launchBrowser("http://vets.arizona.edu/jobs");
+    }
+    public void onFemaleVetsClicked(View view) {
+
+    }
+    public void onSchoolMapClicked(View view) {
+        launchBrowser("https://map.arizona.edu/");
+    }
+    public void onFinancialAidClicked(View view) {
+        launchBrowser("http://vets.arizona.edu/financial-resources");
+    }
+    public void onPalsClicked(View view) {
+        launchBrowser("http://vets.arizona.edu/PALS");
+    }
+    public void onTopClicked(View view) {
+        launchBrowser("http://vets.arizona.edu/top");
+    }
     public void launchBrowser(String uri) {
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
         startActivity(browserIntent);
