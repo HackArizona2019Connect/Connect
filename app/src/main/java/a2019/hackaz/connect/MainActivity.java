@@ -1,5 +1,6 @@
 package a2019.hackaz.connect;
 
+import android.content.pm.ActivityInfo;
 import android.support.v4.app.Fragment;
 import android.content.Intent;
 import android.net.Uri;
@@ -46,6 +47,8 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
         switchFragment(new HomeScreen());
 
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
     }
 
     @Override
@@ -72,10 +75,7 @@ public class MainActivity extends AppCompatActivity
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+
 
         return super.onOptionsItemSelected(item);
     }
